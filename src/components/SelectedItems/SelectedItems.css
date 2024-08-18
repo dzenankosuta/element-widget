@@ -1,0 +1,34 @@
+.selected-items {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.selected-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.selected-item {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.selected-item button {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.selected-item button:hover {
+  color: #dc3545;
+}
