@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# Element Widget
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Element Widget** is a simple React-based application built using TypeScript and Vite. This app allows users to select and manage a limited number of elements, with features like search, filtering, and real-time state synchronization across components.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Select and Manage Elements**: Users can select up to three elements from a list and remove them from the selection.
+- **Search and Filter**: Search for elements by name and apply filters based on criteria (e.g., elements greater than 10, 50, or 100).
+- **Real-Time Updates**: Changes made in the selected items component are reflected immediately in the element selection dialog.
+- **Responsive UI**: User-friendly interface designed to be responsive and intuitive.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get started with the project, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the Repository:**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   ```bash
+   git clone https://github.com/your-username/element-widget.git
+   cd element-widget
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Install Dependencies:**
+   npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. **Run the Application:**
+   npm run dev
+
+The application should now be running on http://localhost:5173.
