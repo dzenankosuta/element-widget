@@ -22,10 +22,9 @@ const SelectItemsDialog: React.FC = observer(() => {
   };
 
   useEffect(() => {
-    if (isOpen) {
-      setTempSelectedElements(elementStore.selectedElements);
-    }
-  }, [isOpen]);
+    setTempSelectedElements(elementStore.selectedElements);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen, elementStore.selectedElements]);
 
   const handleSelect = (element: string) => {
     if (tempSelectedElements.includes(element)) {
