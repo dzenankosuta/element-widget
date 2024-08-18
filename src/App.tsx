@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import SelectedItems from "./components/SelectedItems";
-import SelectItemsDialog from "./components/SelectItemsDialog";
+import SelectedItems from "./components/SelectedItems/SelectedItems";
+import SelectItemsDialog from "./components/SelectItemsDialog/SelectItemsDialog";
 
 const App: React.FC = () => {
   return (
