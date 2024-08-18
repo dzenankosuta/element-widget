@@ -16,7 +16,7 @@ To get started with the project, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/element-widget.git
+   git clone https://github.com/dzenankosuta/element-widget.git
    cd element-widget
 
    ```
